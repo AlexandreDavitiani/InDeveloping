@@ -139,8 +139,14 @@ a li {
 .cont-wht{
     color: #fff!important;
 }
-
+.row-sc{
+    flex-shrink: 0;
+    width: 98%;
+    max-width: 100%;
+    margin-top: var(--bs-gutter-y);
+}
 .property-card {
+ 
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   border-radius: 12px;
@@ -189,12 +195,30 @@ a li {
   background-color: #6f42c1 !important;
 }
 
+.container-bc{
+    background-color: #1C2634;
+}
 
 
+.card-title{
+    font-family: 'ha';
+    font-size: 15px;
+}
+    .attr-nav ul li a:hover {
+  color: #1E40AF;            
+}
+.container-gancxadeba :hover{
+color: #fff!important;
+}
 
+.container-hover :hover{
+color: #1e40af !important; 
 
+}
 
-
+.cont-hov :hover{
+    background-color: #1E40AF;
+}
 @keyframes LoaderCicle{
     0%{
         width:0;
@@ -421,7 +445,7 @@ a:hover,a:active{
     right:20px;
     display:none;
     border-radius: 5px;
-    background: #4e86ff;
+    background: #1E40AF;
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -611,7 +635,7 @@ a:hover,a:active{
     color:#fff
 }
 .butn{
-    background-color:#4e86ff;
+    background-color:#1E40AF;
     border:none;
     color:#fff;
     text-align:center;
