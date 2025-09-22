@@ -552,10 +552,14 @@ progress{
     .container,.container-md,.container-sm{
         max-width:720px
     }
+   
     .container-qonebis{
-  
+
      padding: 0!important;
      margin-right: 16px!;
+    }
+     .container-tp {
+        padding-top: 15px!important;
     }
 }
 @media (min-width:992px){
