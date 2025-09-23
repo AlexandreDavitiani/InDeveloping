@@ -558,7 +558,7 @@ progress{
      padding: 0!important;
      margin-right: 16px!;
     }
-     .container-tp {
+     .container-tp x{
         padding-top: 15px!important;
     }
 }
@@ -2494,8 +2494,8 @@ textarea.form-control-lg{
 }
 .btn-primary{
     color:#fff;
-    background-color:#0d6efd;
-    border-color:#0d6efd
+    background-color:#1E40AF;
+    
 }
 .btn-primary:hover{
     color:#fff;
@@ -3631,7 +3631,7 @@ textarea.form-control-lg{
         flex-basis:auto
     }
     .navbar-expand-lg .navbar-toggler{
-        display:none
+        display:none;
     }
     .navbar-expand-lg .offcanvas-header{
         display:none
@@ -21110,6 +21110,9 @@ p{
 @media (min-width: 1400px){
     .container{
         max-width:1320px
+    }
+    .container-bn{
+        max-width: 1400px;
     }
 }
 _:-ms-lang(x),.container,_:-ms-lang(x),.container-fluid,_:-ms-lang(x),.container-lg,_:-ms-lang(x),.container-md,_:-ms-lang(x),.container-sm,_:-ms-lang(x),.container-xl,_:-ms-lang(x),.container-xxl{
