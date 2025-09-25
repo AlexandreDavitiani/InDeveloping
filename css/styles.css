@@ -220,7 +220,6 @@ color: #1e40af !important;
 
 
 
-
 .cont-hov :hover{
     background-color: #1E40AF;
 }
@@ -252,6 +251,7 @@ color: #1e40af !important;
       background-color: #3b82f6;
       border: none;
       color: #fff;
+      margin: 3px;
     }
     .btn-refresh:hover {
     }
@@ -318,10 +318,7 @@ color: #1e40af !important;
       -webkit-text-fill-color: transparent;
     }
     .form-control {
-      background-color: #0f172a;
-      border: 1px solid #334155;
       color: #fff;
-      padding-left: 40px;
     }
     .form-control:focus {
       background-color: #0f172a;
@@ -336,14 +333,15 @@ color: #1e40af !important;
       transform: translateY(-50%);
       color: #9ca3af;
     }
- .btn-login {
-      background-color: #3b82f6;
+    .btn-login {
+      background-color: #1E40AF;
       border: none;
       width: 100%;
       font-weight: 500;
+      border-radius: 8px;
     }
     .btn-login:hover {
-      background-color: #2563eb;
+      background-color: #1E40AF;
     }
     .demo-box {
       background-color: #0f172a;
@@ -358,11 +356,26 @@ color: #1e40af !important;
       font-size: 14px;
       color: #3b82f6;
       text-decoration: none;
+     
     }
     .small-link:hover {
       text-decoration: underline;
     }
 
+    .conteiner-ct{
+     display: flex;
+     justify-content: center; 
+     align-items: center;     
+     background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+
+    }
+
+    input::placeholder {
+     padding-left: 6%!important;
+    }
+
+
+    
 @keyframes LoaderCicle{
     0%{
         width:0;
@@ -1108,7 +1121,7 @@ a:hover,a:active{
     }
     .slider-fade3 h1 {
     font-size: 18px;
-    padding-top: 15px;
+    margin-top: 5%;
 }
 .section-title {
     font-size: 18px;

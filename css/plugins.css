@@ -366,6 +366,13 @@ legend{
     font-size:calc(1.275rem + .3vw);
     line-height:inherit
 }
+@media (max-width:425px){
+
+    .login-card{
+        margin-right: 2%;
+         margin-left: 2%;
+    }
+}
 @media (min-width:1200px){
     legend{
         font-size:1.5rem
@@ -957,6 +964,10 @@ progress{
         width:16.66666667%
     }
     .col-md-3{
+        flex:0 0 auto;
+        width:25%
+    }
+    .col-md-33{
         flex:0 0 auto;
         width:25%
     }
@@ -2019,11 +2030,11 @@ textarea.form-control-lg{
     background-position:center;
     background-size:contain;
     border:1px solid rgba(0,0,0,.25);
-    -webkit-appearance:none;
+    /* -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
     -webkit-print-color-adjust:exact;
-    color-adjust:exact
+    color-adjust:exact */
 }
 .form-check-input[type=checkbox]{
     border-radius:.25em
@@ -2524,12 +2535,11 @@ textarea.form-control-lg{
 .btn-secondary{
     color:#fff;
     background-color:#6c757d;
-    border-color:#6c757d
+    /* border-color:#6c757d */
 }
 .btn-secondary:hover{
     color:#fff;
-    background-color:#5c636a;
-    border-color:#565e64
+    /* border-color:#565e64 */
 }
 .btn-check:focus+.btn-secondary,.btn-secondary:focus{
     color:#fff;
@@ -21102,6 +21112,7 @@ p{
     flex:1;
     word-break:break-word
 }
+
 @media (min-width: 1200px){
     .container{
         max-width:1170px
@@ -33711,6 +33722,12 @@ section.md{
     }
 }
 @media (max-width: 991px){
+    .login-card{
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 991px){
     .sm-height-auto{
         height:auto
     }
@@ -35454,10 +35471,56 @@ article .card-img img {
     display: none!important
   }
 }
+@media (max-width:1199px) {
+  .container-clmn{
+    flex-direction: column;
+  }
+  .col-md-33{
+    width: 100%;
+  }
+  .conatiner-filter{
+    width: 100%!important;
+  }
+  .filter-box{
+   margin-top:5%!important;
+  }
+}
+@media (max-width:989px) {
+.filter-box{
+   margin-top:15%!important;
+  }
+
+}
+@media (max-width:768px) {
+.filter-box{
+   margin-top:20%!important;
+  }
+
+}
+@media (max-width:576px) {
+.filter-box{
+   margin-top:30%!important;
+  }
+
+}
 
 @media (min-width:1200px) {
   .hidden-lg {
     display: none!important
+  }
+}
+@media (max-width: 1199px) {
+  #nav.active {
+    display: flex !important; 
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+    position: relative !important;
+    z-index: 1000 !important;
+  }
+   .navbar-expand-lg .navbar-toggler {
+    display: block !important;
   }
 }
 .scrollHeader .navbar-brand img {
