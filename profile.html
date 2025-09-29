@@ -22,9 +22,7 @@
 
 <body>
   
-
-
-<div id="preloader"></div>
+  <div id="preloader"></div>
   
   <div class="main-wrapper">
     <header class="header-style2">
@@ -33,23 +31,23 @@
           <div class="menu_area">
             <div class="row align-items-center">
               <div class="col-12 col-lg-12">
-                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <nav class="navbar navbar-expand-lg nav-l-g navbar-light p-0">
                   <div class="navbar-header navbar-header-custom">
                     <a href="index.html" class="navbar-brand logodefault"><img id="logo" src="img/logo.png" alt=""></a>
                   </div>
                   
                   
                   <div class="attr-nav align-items-lg-center ms-lg-auto">
-                    <div class="navbar-toggler"></div>
-                    <ul class="navbar-nav align-items-lg-center ms-auto" id="nav" style="display: none;">
-                      <li><a href="bina.html">ბინა</a></li>
+                    <div class="navbar-toggler nav-t-g"></div>
+                    <ul class="navbar-nav align-items-lg-center ms-auto" id="nav" >
+                      <li><a href="apartments.html">ბინა</a></li>
                       <li><a href="#">სახლი </a></li>
                       <li><a href="#">კომერციული</a></li>
                       <li><a href="#">მიწა</a></li>
-                      <li><a href="#"> სასტუმრო </a></li>
+                      <li><a href="#">სასტუმრო </a></li>
                       
                       
-                      <li class=" nav-item dropdown" style="list-style: none;">
+                      <li class=" nav-item dropdown ">
                         <a class=" container-hover cont-wht nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false ">
                           $ GEL
                         </a>
@@ -59,7 +57,7 @@
                         </div>
                       </li>
                       
-                      <li class="nav-item dropdown " style="list-style: none; color: #ffffff!important;">
+                      <li class="nav-item dropdown container-drop " >
                         <a class=" container-hover cont-wht nav-link dropdown-toggle container-hover" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false ">
                           KA
                         </a>
@@ -70,14 +68,12 @@
                         </div>
                       </li>
                       
-                      
-                      <a href="#" style="color: #ffffff;"><i class="container-icon bi-heart container-hover"></i></a>   
-                      <a href="#" style="color: #ffffff;"><i class="container-icon bi-person"></i></a> 
-                      
-                      
+                      <a href="favorites.html" class="container-small-icons" ><i class="container-icon bi-heart container-hover"></i></a>   
+                      <a href="profile.html" class="container-small-icons" ><i class="container-icon bi-person"></i></a> 
+                
                       <div class="attr-nav align-items-lg-center ms-lg-auto">
                         <ul class="hidden-xs header-profile container-gancxadeba cont-hov">
-                          <li><a href="register.html">განცხადების დადება </a></li>
+                          <li><a href="add-advertisement.html">განცხადების დადება </a></li>
                         </ul>  
                       </div>
                       
@@ -86,7 +82,7 @@
                   
                   <div class="container-none attr-nav align-items-lg-center ms-lg-auto">
                     <ul class="hidden-xs header-profile container-gancxadeba">
-                      <li><a href="register.html">განცხადების დადება </a></li>
+                      <li><a href="add-advertisement.html">განცხადების დადება </a></li>
                     </ul>  
                   </div>
                   
@@ -99,6 +95,83 @@
       </div>
     </header>
     
+    
+
+
+
+
+
+
+
+
+
+ <div class="container-fluid py-4">
+    <div class="row">
+      <div class="col-md-3 col-lg-2 mb-3">
+        <div class="sidebar">
+          <a href="#" class="active"><i class="bi bi-grid me-2"></i> Dashboard</a>
+          <a href="#"><i class="bi bi-house-door me-2"></i> My Properties</a>
+          <a href="#"><i class="bi bi-gear me-2"></i> Settings</a>
+          <a href="#" class="signout"><i class="bi bi-box-arrow-left me-2"></i> Sign Out</a>
+        </div>
+      </div>
+
+     
+      <div class="col-md-9 col-lg-10">
+        <div class="content">
+          <h4 class="mb-4">Dashboard</h4>
+          
+          <div class="row g-3 mb-4">
+            <div class="col-md-4">
+              <div class="stat-card">
+                <i class="bi bi-house-door text-primary"></i>
+                <h5 class="mb-0">0</h5>
+                <small>Active Listings</small>
+                <span class="text-success fw-bold float-end">+2</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stat-card">
+                <i class="bi bi-heart text-danger"></i>
+                <h5 class="mb-0">0</h5>
+                <small>Favorites</small>
+                <span class="text-success fw-bold float-end">+3</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stat-card">
+                <i class="bi bi-graph-up-arrow text-purple"></i>
+                <h5 class="mb-0">28</h5>
+                <small>Inquiries</small>
+                <span class="text-success fw-bold float-end">+5</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h6 class="fw-bold mb-0">Recent Properties</h6>
+            <a href="#" class="text-primary small">View all</a>
+          </div>
+
+          <h6 class="fw-bold mt-3">Recent Activity</h6>
+          <div class="recent-activity">
+            New inquiry received for "Luxury Villa" 
+            <small>2 hours ago</small>
+          </div>
+          <div class="recent-activity">
+            Someone added your property to favorites 
+            <small>5 hours ago</small>
+          </div>
+          <div class="recent-activity">
+            Property "Modern Apartment" was published 
+            <small>1 day ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 
 

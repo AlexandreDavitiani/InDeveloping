@@ -20995,8 +20995,10 @@ body{
 body,html{
     -moz-osx-font-smoothing:grayscale
 }
+
+
+
 a,a:active,a:focus{
-    /* color:#575a7b; */
     text-decoration:none;
     transition-timing-function:ease-in-out;
     -ms-transition-timing-function:ease-in-out;
@@ -21010,7 +21012,6 @@ a,a:active,a:focus{
     -o-transition-duration:.2s
 }
 a:hover,a:active{
-    /* color:#1e2022; */
     text-decoration:none
 }
 a:focus,a:active,button:focus,button:active,.btn.active.focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn:active:focus,.btn:focus{
@@ -21023,7 +21024,7 @@ img{
     vertical-align:top
 }
 .form-control{
-    height: 38px;
+    height: 36px;
 }
 .form-control:focus{
     box-shadow:0 0 10px rgba(55,125,255,0.1);
@@ -27813,6 +27814,19 @@ section.md{
         padding-right:12.5rem
     }
 }
+
+@media screen and (max-width: 992px){
+    .container-fv{
+      margin-top: 15%;
+    }
+    .container-flx{
+        flex-direction: column;
+    }
+    .container-flx h5 {
+      padding-bottom:10px;
+    }
+   
+}
 @media screen and (min-width: 992px){
     .w-lg-1px{
         width:1px
@@ -34403,18 +34417,14 @@ header{
     .header-style2 .navbar-default{
         box-shadow:none
     }
-    .header-style2 .navbar-nav li a{
-        color:#6f6f6f
-    }
+  
     .header-style2 .navbar-nav>li>a{
         color: #fff;
     }
     .header-style2 .navbar-nav li>ul{
         background:#fff
     }
-    .header-style2 .navbar ul ul li.active>a{
-        color:#282b2d
-    }
+  
     .header-style2 .navbar-nav li.has-sub a:hover{
         color:#282b2d
     }
@@ -34559,9 +34569,7 @@ header{
     .navbar-nav li.has-sub a:hover{
         color:#282b2d
     }
-    .navbar ul ul li.active>a{
-        color:#000
-    }
+
     .navbar .sub-title{
         color:#282b2d
     }
