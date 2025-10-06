@@ -302,6 +302,73 @@ a li {
   padding: 25px;
   border: 1px solid #2d333b;
 }
+ 
+
+
+  #previewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .preview-item {
+    position: relative;
+    width: 120px;
+    border-radius:  3px 3px  ;
+    overflow: hidden;
+    background-color: #0f172a;
+  }
+
+  .preview-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .preview-item img:hover {
+    transform: scale(1.05);
+  }
+
+  .delete-btn {
+    background-color: #1E40AF;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 6px 0;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .delete-btn:hover {
+    background-color: #1e3a8a;
+  }
+
+      .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .modal-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+  }
+
+  .d-none {
+    display: none !important;
+  }
 
 .custom-checkbox {
   background-color: #1c2128;
@@ -715,16 +782,32 @@ a li {
 }
 .features li {
   display: flex;
-  align-items: center;
-  font-size: 0.95rem;
-  line-height: 1.4;
+  align-items: flex-start; /* чтобы галочка была сверху текста */
+  gap: 8px; /* отступ между галочкой и текстом */
+  font-size: 16px;
+  line-height: 1.5; /* делаем текст ровным и читаемым */
+  text-align: left; /* выравнивание текста */
 }
+
 .features i {
   color: #00ffae;
   font-size: 1rem;
   margin-right: 8px;
 }
 
+
+.custom-checkbox input {
+    display: none;
+  }
+
+  .custom-checkbox.active {
+    background-color: #1E40AF;
+    border-color: #1E40AF;
+  }
+
+  .custom-checkbox:hover {
+    border-color: #1E40AF;
+  }
 .features-sc{
   flex: 1;
   display: flex;
@@ -750,7 +833,7 @@ a li {
   margin-bottom: 40px;
 }
 .container-bd{
-    border-radius: 8px!important;
+    border-radius: 8px!important    ;
 }
 .toggle-group .btn {
   border-radius: 50px;

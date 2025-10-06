@@ -34273,9 +34273,40 @@ header{
 .top-search.white .input-group-addon{
     color:#282b2d
 }
-@media screen and (min-width: 992px){
+@media  (max-width: 992px){
+.col-md-45{
+    width: 50%;
+}
+.col-md-44{
+    width: 45%!important;
+    flex:0 0 auto;
+}
+.container-ct{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+}
+.txt-cet{
+    text-align: center;
+}
+}
 
-    
+@media  (max-width: 768px){
+    .col-md-45{
+        width: 100%;
+    }
+.col-md-44{
+    width: 100%!important;
+    flex:0 0 auto;
+}
+}
+.col-md-44{
+    width: 33.3%;
+    flex:0 0 auto;
+}
+
+
+@media screen and (min-width: 992px){
     header.scrollHeader .navbar-default{
         position:
         fixed;
