@@ -330,7 +330,7 @@ a li {
   .preview-item img:hover {
     transform: scale(1.05);
   }
-
+/* 
   .delete-btn {
     background-color: #1E40AF;
     color: #fff;
@@ -344,7 +344,7 @@ a li {
 
   .delete-btn:hover {
     background-color: #1e3a8a;
-  }
+  } */
 
       .modal-overlay {
     position: fixed;
@@ -6544,7 +6544,7 @@ input[type="radio"]:checked ~ label::before {
 .img-checkbox {
   margin-bottom: 0;
 }
-.img-delete-icon {
+/* .img-delete-icon {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -6559,7 +6559,7 @@ input[type="radio"]:checked ~ label::before {
 .img-delete-icon i {
   color: #ff4e62;
   font-size: 18px;
-}
+} */
 
 
 .apt-content-footer.apt-content-footer-buttons ul li a {
@@ -6568,13 +6568,13 @@ input[type="radio"]:checked ~ label::before {
   height: 50px;
   padding: 0px 20px;
 }
-.butn-delete {
+/* .butn-delete {
   padding: 0px !important;
 }
 .butn-delete i {
   color: #ff4e62;
   font-size: 18px;
-}
+} */
 
 
 .uploaded-img {
@@ -6599,7 +6599,7 @@ input[type="radio"]:checked ~ label::before {
   z-index: 999;
   text-align: center;
 }
-.uploaded-img .img-delete-icon {
+/* .uploaded-img .img-delete-icon {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -6610,16 +6610,16 @@ input[type="radio"]:checked ~ label::before {
   background: #ff4e62;
   z-index: 999;
   text-align: center;
-}
+} */
 .uploaded-img .img-main-icon i {
   color: #ffffff;
   font-size: 15px;
   font-weight: bold;
 }
-.uploaded-img .img-delete-icon i {
+/* .uploaded-img .img-delete-icon i {
   color: #ffffff;
   font-size: 16px;
-} 
+}  */
 .img-vip-icon {
   position: absolute !important;
   top: 10px;
@@ -6839,4 +6839,21 @@ input[type="radio"]:checked ~ label::before {
 
 .butn-vip {
   background-color: #ff9900;
+}
+
+/* ДОБАВИТЬ В КОНЕЦ ФАЙЛА styles.css */
+@media (max-width: 1199px) { /* <--- ИЗМЕНЕННОЕ ЗНАЧЕНИЕ */
+    
+    /* 1. ГАРАНТИРОВАННО Скрываем меню по умолчанию */
+    .attr-nav #nav:not(.show) {
+        display: none !important; 
+    }
+
+    /* 2. ГАРАНТИРОВАННО Показываем меню, когда кнопка его открыла */
+    .attr-nav #nav.show {
+        display: block !important;
+        height: auto !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
 }
