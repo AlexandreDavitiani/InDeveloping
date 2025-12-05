@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="KA">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>LivePlace</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="img/short.png">
+  <link rel="shortcut icon" href="img/logos/favicon.png">
+  <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="css/plugins.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  
+  <div id="preloader"></div>
+  
+  <div class="main-wrapper">
+    <header class="header-style2">
+      <div class="navbar-default">
+        <div class="container">
+          <div class="menu_area">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-12">
+                <nav class="navbar navbar-expand-lg nav-l-g navbar-light p-0">
+                  <div class="navbar-header navbar-header-custom">
+                    <a href="index.html" class="navbar-brand logodefault"><img id="logo" src="img/logo.png" alt=""></a>
+                  </div>  
+                  <div class="attr-nav align-items-lg-center ms-lg-auto">
+                    <button class="navbar-toggler nav-t-g" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#nav" 
+                    aria-controls="nav" 
+                    aria-expanded="false">
+                  </button>
+                  <ul class="navbar-nav align-items-lg-center ms-auto" id="nav" >
+                    <li><a href="apartments.html">ბინა</a></li>
+                    <li><a href="registracia.html">სახლი </a></li>
+                    <li><a href="shesvla.html">კომერციული</a></li>
+                    <li><a href="#">მიწა</a></li>
+                    <li><a href="#">სასტუმრო </a></li>  
+                    <li class=" nav-item dropdown ">
+                      <a class=" container-hover cont-wht nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false ">
+                        $ GEL
+                      </a>
+                      <div class="cont-wht dropdown-menu cont-hov" aria-labelledby="navbarDropdown">
+                        <a class="cont-wht dropdown-item" href="#">USD ($)</a>
+                        <a class=" cont-wht dropdown-item" href="#">GEL (₾)</a>
+                      </div>
+                    </li>          
+                    <li class="nav-item dropdown container-drop " >
+                      <a class=" container-hover cont-wht nav-link dropdown-toggle container-hover" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false ">
+                        KA
+                      </a>
+                      <div class="cont-wht dropdown-menu cont-hov" aria-labelledby="navbarDropdown">
+                        <a class="cont-wht dropdown-item" href="#">English</a>
+                        <a class="cont-wht dropdown-item" href="#">ქართული</a>
+                        <a class="cont-wht dropdown-item" href="#">Русский</a>
+                      </div>
+                    </li>           
+                    <a href="favorites.html" class="container-small-icons" ><i class="container-icon bi-heart container-hover"></i></a>   
+                    <a href="profile.html" class="container-small-icons" ><i class="container-icon bi-person"></i></a>             
+                    <div class="attr-nav align-items-lg-center ms-lg-auto">
+                      <ul class="hidden-xs header-profile container-gancxadeba cont-hov">
+                        <li><a href="add-advertisement.html">განცხადების დადება </a></li>
+                      </ul>  
+                    </div>              
+                  </ul>   
+                </div>          
+                <div class="container-none attr-nav align-items-lg-center ms-lg-auto">
+                  <ul class="hidden-xs header-profile container-gancxadeba">
+                    <li><a href="add-advertisement.html">განცხადების დადება </a></li>
+                  </ul>  
+                </div>                
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="blk-form-area py-4">
+    <div class="container blk-form-box">
+      <h4 class="blk-form-title mb-4">ძირითადი ინფორმაცია</h4>  
+      <form>
+        <div class="mb-3">
+          <label class="blk-label mb-2">სათაური *</label>
+          <input type="text" class="form-control blk-input" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label class="blk-label mb-2">აღწერა *</label>
+          <textarea class="form-control blk-input" rows="5"></textarea>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="blk-label mb-2">ფასი *</label>
+            <input type="number" class="form-control blk-input" placeholder="">
+          </div>
+          <div class="col-md-6">
+            <label class="blk-label mb-2">ვალუტა</label>
+            <select class="form-select blk-input">
+              <option>USD</option>
+              <option>GEL</option>
+            </select>
+          </div>
+        </div>
+        <div class="row g-3 mt-2">
+          <div class="col-md-6">
+            <label class="blk-label mb-2">ქონების ტიპი *</label>
+            <select class="form-select blk-input">
+              <option>ტიპის არჩევა</option>
+              <option>ბინა</option>
+              <option>სახლი</option>
+              <option>კომერციული</option>
+              <option>მიწა</option>
+              <option>სასტუმრო</option>    
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="blk-label mb-2">განცხადების ტიპი</label>
+            <select class="form-select blk-input">
+              <option>გასაყიდად</option>
+              <option>გასაქირავლებად</option>
+              <option>დღიური ქირა</option>
+              <option>იჯარის უფლება</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    <div class="container blk-form-box">
+      <h4 class="blk-form-title mb-4">დეტალები და კოორდინატები</h4>
+      <form>
+        
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="blk-label mb-2">საძინებელი</label>
+            <input type="number" class="form-control blk-input">
+          </div>
+          <div class="col-md-6">
+            <label class="blk-label mb-2">სააბაზანო</label>
+            <input type="number" class="form-control blk-input">
+          </div>
+        </div>
+        <div class="row g-3 mt-2">
+          <div class="col-md-6">
+            <label class="blk-label mb-2">ხედი*</label>
+            <select class="form-select blk-input">
+              <option>ქალაქის ხედი</option>
+              <option>მთის ხედი</option>
+              <option>ზღვის ხედი</option>
+              <option>ბაღის ხედი</option>
+              
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="blk-label mb-2">შენობის ტიპი</label>
+            <select class="form-select blk-input">
+              <option>ახალი შენობა</option>
+              <option>ძველი შენობა</option>
+              <option>დღიური ქირა</option>
+              <option>იჯარის უფლება</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="mt-3">
+          <label class="blk-label mb-2">ფართობი (მ²) *</label>
+          <input type="number" class="form-control blk-input">
+        </div>  
+        <div class="row g-3 mt-3">
+          <div class="col-md-6">
+            <label class="blk-label mb-2">ქალაქი *</label>
+            <select class="form-select blk-input">
+              <option>ტიპის არჩევა</option>
+              <option>თბილისი</option>
+              <option>ბათუმი</option>
+              <option>ქუთაისი</option>
+              <option>რუსთავი</option>
+              <option>გორი</option>
+              <option>ზუგდიდი</option>
+              <option>ფოთი</option>
+              <option>ქობულეთი</option>
+              <option>ხაშური</option>
+              <option>სამტრედია</option>
+              <option>თელავი</option>
+              <option>ბორჯომი</option>
+              <option>მცხეთა</option>
+              <option>სიღნაღი</option>
+              <option>ახალციხე</option>
+              <option>გუდაური</option>
+              <option>სტეფანწმინდა</option> 
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="blk-label mb-2">რაიონი *</label>
+            <select class="form-select blk-input">
+              <option>ტიპის არჩევა</option>
+              <option>საბურთალო</option>
+              <option>ვაკე</option>
+            </select>
+          </div>
+        </div>
+        <div class="mt-3">
+          <label class="blk-label mb-2">მისამართი *</label>
+          <input type="text" class="form-control blk-input">
+        </div>
+        <hr class="my-4">
+        <h5 class="blk-form-title mb-3">საკონტაქტო ინფორმაცია</h5>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="blk-label mb-2">საკონტაქტო სახელი *</label>
+            <input type="text" class="form-control blk-input">
+          </div>
+          <div class="col-md-6">
+            <label class="blk-label mb-2">საკონტაქტო ტელეფონი *</label>
+            <input type="text" class="form-control blk-input">
+          </div>
+        </div>
+        <div class="mt-3">
+          <label class="blk-label mb-2">საკონტაქტო ელ-ფოსტა</label>
+          <input type="email" class="form-control blk-input">
+        </div>
+      </form>
+    </div> 
+    <div class="container my-5">
+      <div class="custom-card mb-4">
+        <h5 class="mb-3 txt-cet">ქონების მახასიათებლები</h5>
+        <p class="mb-4 text-white txt-cet">აირჩიეთ რა შედის თქვენს ქონებაში</p>
+        <div class=" container-ct row g-3">
+          <div class="  col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> პარკინგი
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> ლიფტი
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> ავეჯი
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> აივანი
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> კონდიციონერი
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> ცენტრალური გათბობა
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> Wi-Fi
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> უსაფრთხოების სისტემა
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> საცავი
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> ბაღი
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> აუზი
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> სპორტული დარბაზი
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> სააბაზანო
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> ბუნებრივი გაზი
+            </label>
+          </div>
+          <div class=" col-md-44">
+            <label class="custom-checkbox">
+              <input type="checkbox"> ცხელი წყალი
+            </label>
+          </div>
+        </div>
+        <div class="note-box mt-4">
+          💡რჩევა: მახასიათებლების მითითება დაეხმარება მყიდველებს უფრო სწრაფად იპოვონ თქვენი ქონება და გაზრდის ინტერესს განცხადებისადმი.
+        </div>
+      </div>
+      <div class="custom-card">
+        <div class="mb-3">
+          <label class="form-label text-white mb-2">სურათები (მაქსიმუმ 20 სურათი)</label>
+          <p class="text-secondary">მხარდაჭერილი ფორმატებია: JPG, PNG, WEBP</p>
+          <label for="fileUpload" class="upload-box w-100">
+            <i class="bi bi-plus-lg"></i>
+            სურათის დამატება
+          </label>
+          <input type="file" id="fileUpload" class="d-none" multiple accept=".jpg,.png,.webp">
+          
+          <div id="previewContainer" class="mt-3 d-flex flex-wrap gap-2"><img src="img/bad.png" alt="">   </div>
+        </div>
+        
+        <div id="actionButtons" class="d-flex gap-2 mt-3" style="display: none;">
+          <button type="button" class="btn btn-custom-navy rounded-0" aria-label="სურათის ატვირთვა">
+            <i class="bi bi-image"></i>
+          </button>
+          <button type="button" class="btn btn-custom-navy rounded-0" aria-label="წაშლა">
+            <i class="bi bi-trash"></i>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+    
+    
+    
+    
+    
+  </div>
+  <div class="container py-5">
+    <h2 class="text-center mb-4">აირჩიეთ თქვენი სარეკლამო პაკეტი</h2>
+    <div class="toggle-group mb-5">
+      <div class="btn-group" role="group" aria-label="Package duration">
+        <input type="radio" class="btn-check" name="package" id="day1" autocomplete="off" checked>
+        <label class="btn btn-outline-light btn-toggle" for="day1">1 დღე</label>
+        
+        <input type="radio" class="btn-check" name="package" id="day7" autocomplete="off">
+        <label class="btn btn-outline-light btn-toggle" for="day7">7 დღე</label>
+        
+        <input type="radio" class="btn-check" name="package" id="day30" autocomplete="off">
+        <label class="btn btn-outline-light btn-toggle" for="day30">30 დღე</label>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-45 col-lg-3">
+        <div class="card pricing-card standard text-center p-3 h-100">
+          <div>
+            <div class="pricing-header"><i class="bi bi-star-fill"></i> Standard</div>
+            <div class="price">2 <span style="font-size:1rem;">₾</span></div>
+            <ul class="list-unstyled features mt-3">
+              <li><i class="bi bi-check-circle-fill"></i> სტანდარტული სტატუსი </li>
+              <li><i class="bi bi-check-circle-fill"></i> უფრო მაღალი ხილვადობა, ვიდრე უფასო განცხადებები</li>
+              <li><i class="bi bi-check-circle-fill"></i> მაქსიმუმ 10 ფოტო</li>
+              <li><i class="bi bi-check-circle-fill"></i>პრიორიტეტული მხარდაჭერა</li>
+            </ul>
+          </div>
+  <div class="mt-3">
+  <input type="radio" class="btn-check" name="chooseOption" id="option1" autocomplete="off">
+  <label class="btn btn-light btn-custom" for="option1">აირჩიეთ</label>
+</div>
+        </div>
+      </div>
+      <div class="col-md-45 col-lg-3">
+        <div class="card pricing-card vip text-center p-3 h-100">
+          <div>
+            <div class="pricing-header"><i class="bi bi-gem"></i> VIP</div>
+            <div class="price">4 <span style="font-size:1rem;">₾</span></div>
+            <ul class="list-unstyled features mt-3">
+              <li><i class="bi bi-check-circle-fill"></i> VIP სტატუსის ნიშანი</li>
+              <li><i class="bi bi-check-circle-fill"></i> უფრო მაღალი ხილვადობა ვიდრე სტანდარტული</li>
+              <li><i class="bi bi-check-circle-fill"></i> ქონების ანალიტიკა</li>
+              <li><i class="bi bi-check-circle-fill"></i> მაქსიმუმ 15 ფოტო</li>
+              <li><i class="bi bi-check-circle-fill"></i> პრიორიტეტული მხარდაჭერა</li>     
+            </ul>
+          </div>
+  <div class="mt-3">
+  <input type="radio" class="btn-check" name="chooseOption" id="option2" autocomplete="off">
+  <label class="btn btn-light btn-custom" for="option2">აირჩიეთ</label>
+</div>
+        </div>
+      </div>
+      <div class="col-md-45 col-lg-3">
+        <div class="card pricing-card premium text-center p-3 h-100">
+          <div>
+            <div class="pricing-header"><i class="fas fa-crown"></i>  Premium</div>
+            <div class="price">7 <span style="font-size:1rem;">₾</span></div>
+            <ul class="list-unstyled features mt-3">
+              <li><i class="bi bi-check-circle-fill"></i> პრემიუმ სტატუსი</li>
+              <li><i class="bi bi-check-circle-fill"></i> მთავარ გვერდზე</li>
+              <li><i class="bi bi-check-circle-fill"></i> ქონების ანალიტიკა</li>
+              <li><i class="bi bi-check-circle-fill"></i> ულიმიტო ფოტოები</li>
+              <li><i class="bi bi-check-circle-fill"></i> პრიორიტეტული მხარდაჭერა</li>
+            </ul>
+          </div>
+ <div class="mt-3">
+  <input type="radio" class="btn-check" name="chooseOption" id="option3" autocomplete="off">
+  <label class="btn btn-light btn-custom" for="option3">აირჩიეთ</label>
+</div>
+        </div>
+      </div>
+      <div class="col-md-45 col-lg-3">
+        <div class="card pricing-card monthly text-center p-3 h-100">
+          <div>
+            <div class="pricing-header"><i class="bi bi-infinity"></i> Monthly</div>
+            <div class="price">250 <span style="font-size:1rem;">₾</span></div>
+            <ul class="list-unstyled features mt-3">
+              <li><i class="bi bi-check-circle-fill"></i> მაქს 7 განცხადება</li>
+              <li><i class="bi bi-check-circle-fill"></i> ყველა Premium ფუნქცია</li>
+              <li><i class="bi bi-check-circle-fill"></i> 30-დღიანი წვდომა</li>
+              <li><i class="bi bi-check-circle-fill"></i> დაზოგეთ 500+ ₾/თვეში</li>
+              <li><i class="bi bi-check-circle-fill"></i> პრიორიტეტული მხარდაჭერა</li>
+            </ul>
+          </div>
+<div class="mt-3">
+  <input type="radio" class="btn-check" name="chooseOption" id="option4" autocomplete="off">
+  <label class="btn btn-light btn-custom" for="option4">აირჩიეთ</label>
+</div>
+        </div>
+      </div>  
+    </div>  
+    <div class="container container-pdd">
+      <div class="row g-3">
+        <div class="col-md-6 ">
+          <div class="card pricing-card fast text-center p-3 h-100">
+            <div>
+              <div class="pricing-header">
+                <i class="bi bi-lightning-charge-fill text-danger"></i> სასწრაფოდ
+              </div>
+              <div class="price">20 <span style="font-size:1rem;">₾</span></div>
+              <p>განცხადება გამოჩნდება ყველა გვერდზე</p>
+            </div>
+        <div class="mt-3">
+  <input type="checkbox" class="btn-check" id="check1" autocomplete="off">
+  <label class="btn btn-light btn-custom" for="check1">აირჩიეთ</label>
+</div>
+          </div>
+        </div>      
+        <div class="col-md-6">
+          <div class="card pricing-card free text-center p-3 h-100">
+            <div>
+              <div class="pricing-header">
+                <i class="bi bi-gift-fill "></i> უფასოდ
+              </div>
+              <div class="price">0 <span style="font-size:1rem;">₾</span></div>
+              <ul class=" features-sc ">
+                <li><i class="bi bi-check-circle-fill"></i> ძირითადი სია</li>
+                <li><i class="bi bi-check-circle-fill"></i>ხანგრძლივობა 7 დღე</li>
+                <li><i class="bi bi-check-circle-fill"></i> მაქსიმუმ 5 ფოტო</li>
+              </ul>
+            </div>
+ <div class="mt-3">
+  <input type="radio" class="btn-check" name="chooseOption" id="option5" autocomplete="off">
+  <label class="btn btn-light btn-custom" for="option5">აირჩიეთ</label>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <div class="mt-4 text-center">
+      <h5>სულ გადასახდელი: 
+        <span id="totalPrice" class="text-info">0 ₾</span> 
+      </h5>
+    </div>
+    <div class=" mt-5 wow fadeIn text-center" data-wow-delay="100ms">
+      <button id="payButton" class="container-bd btn btn-primary butn medium">განცხადების განთავსება</button>
+    </div>  
+  </div>
+</section>
+
+
+
+<section class="img-section ">
+  <div class="container z-index-9 position-relative">
+    <div class="row wow fadeIn" data-wow-delay="100ms">
+      <div class="col-lg-12">
+        <img src="img/slider/2.png">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer-style1 container-bc">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 mb-1-9 mb-lg-0 wow fadeIn" data-wow-delay="100ms">
+        <img class="footer-logo" src="img/logo-footer.svg" class="mb-4" alt="" />
+        <div class="social-icons2">
+          <ul class="ps-0 mb-0">
+            <li><a href="https://www.facebook.com/profile.php?id=100063974403148"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://t.me/LivePlace_bot "><i class="fab fa-telegram-plane"></i></a></li>
+            <li><a href="https://www.tiktok.com/@liveplace1?_t=ZS-90lYyexQTVo&_r=1"><i class="fab fa-tiktok"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="row">
+          <div class="col-12 mb-1-9 pb-4 border-bottom border-color-light-white wow fadeIn" data-wow-delay="100ms">
+            <div class="row">
+              <div class="col-md-6 col-lg-6 mb-4 mb-lg-0">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <i class="ti-mobile display-20 text-primary"></i>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h6 class="text-white mb-1">კონტაქტები</h4>
+                      <p class="mb-0 text-white opacity8 small">+995 577 952 343</p>
+                      <p class="mb-0 text-white opacity8 small">+995 579 456 555</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4 mb-lg-0">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <i class="ti-email display-20 text-primary"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <h6 class="text-white mb-1">ელ.ფოსტა</h4>
+                        <p class="mb-0 text-white opacity8 small">karabakhtsianvlad12@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-12 mb-1-9 mb-lg-0 wow fadeIn" data-wow-delay="100ms">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul class="ps-0 mb-0">
+                      <li><a href="politika.html">კონფიდენციალურობა</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar wow fadeIn" data-wow-delay="100ms">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>© 2025 LivePlace. ყველა უფლება დაცულია. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> 
+  </div>
+  
+  <a href="#" class="scroll-to-top"><i class="ti-arrow-up" aria-hidden="true"></i></a>
+</div>
+
+<a href="#" class="scroll-to-top"><i class="ti-arrow-up" aria-hidden="true"></i></a>
+
+<script src="js/liveplace.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/core.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/plugins.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
